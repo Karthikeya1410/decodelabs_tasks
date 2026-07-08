@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #eef4f8;
+}
+
+.header {
+  padding: 32px 20px;
+  color: #ffffff;
+  background: #0f766e;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.layout {
+  max-width: 1050px;
+  margin: 28px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+}
+
+.panel {
+  border: 1px solid #d4dde7;
+  border-radius: 8px;
+  padding: 22px;
+  background: #ffffff;
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 11px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 14px;
+  color: #ffffff;
+  background: #0f766e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.intern-list {
+  display: grid;
+  gap: 12px;
+}
+
+.intern-card {
+  border: 1px solid #d4dde7;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f8fafc;
+}
+
+.intern-card h3 {
+  margin: 0 0 6px;
+}
+
+.intern-card p,
+.message {
+  margin: 0;
+}
+
+.message {
+  min-height: 24px;
+  margin-top: 14px;
+  color: #166534;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,6 @@
+*.pdf
+requirements_extracted.txt
+tmp_pdf_pages/
+.repo_git/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs Intern Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <h1>DecodeLabs Intern Portal</h1>
+      <button class="menu-button" id="menuButton" aria-label="Toggle navigation">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tasks">Tasks</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">Full Stack Development</p>
+        <h2>Track internship tasks in one simple responsive page.</h2>
+        <p class="hero-text">A clean frontend interface built with HTML, CSS, and basic JavaScript.</p>
+        <a class="primary-link" href="#register">Add Intern</a>
+      </div>
+      <div class="status-panel">
+        <span>Responsive UI</span>
+        <strong>Ready</strong>
+      </div>
+    </section>
+
+    <section class="section" id="tasks">
+      <h2>Weekly Tasks</h2>
+      <div class="task-grid">
+        <article>
+          <h3>Project 1</h3>
+          <p>Responsive frontend interface</p>
+        </article>
+        <article>
+          <h3>Project 2</h3>
+          <p>Backend API development</p>
+        </article>
+        <article>
+          <h3>Project 3</h3>
+          <p>Database integration</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section form-section" id="register">
+      <h2>Intern Registration</h2>
+      <form id="internForm">
+        <label>
+          Name
+          <input type="text" id="name" placeholder="Enter intern name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" placeholder="Enter email" required>
+        </label>
+        <label>
+          Skill
+          <input type="text" id="skill" placeholder="Example: JavaScript" required>
+        </label>
+        <button type="submit">Save Intern</button>
+      </form>
+      <p class="message" id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

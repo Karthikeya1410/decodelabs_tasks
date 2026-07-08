@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs Full Stack App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>DecodeLabs Intern Manager</h1>
+    <p>Frontend and backend connected with fetch and async/await.</p>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Add Intern</h2>
+      <form id="internForm">
+        <label>
+          Name
+          <input type="text" id="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" required>
+        </label>
+        <label>
+          Skill
+          <input type="text" id="skill" required>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="message" class="message"></p>
+    </section>
+
+    <section class="panel">
+      <div class="list-heading">
+        <h2>Intern List</h2>
+        <button id="refreshButton" type="button">Refresh</button>
+      </div>
+      <div id="internList" class="intern-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
